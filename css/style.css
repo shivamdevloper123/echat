@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+padding: 0;
+}
+body{ height:100vh ;
+     background-image: linear-gradient(rgb(236, 237, 247),rgb(110, 34, 203)
+    ) ;
+padding-bottom:10% ;
+transition: padding-bottom 0.5s ease;}
+
+    .logo{
+    display: block;
+    margin: auto; 
+    width: 50px;
+    height: 50px;
+   
+    
+}
+
+
+h1{ 
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.container{
+    /* background-color: rgba(38, 36, 36, 0.059); */
+    background-image: url(https://camo.githubusercontent.com/ebf18cd85f7aa9dc79fb74c58dc94febf3a6441d8d689cd5a400b2707e19ec0e/68747470733a2f2f7765622e77686174736170702e636f6d2f696d672f62672d636861742d74696c652d6461726b5f61346265353132653731393562366237333364393131306234303866303735642e706e67);
+    max-width: 955px;
+    margin: auto;
+ border-radius: 6px;
+ border: solid black 3px; 
+    height: 60vh;
+    padding: 33PX;
+    overflow-y: auto;
+    margin-bottom: 23px;
+} 
+.message{
+    background-color:white;
+    width: 24%;
+    margin: 4px;
+    padding: 5px;
+    
+border-radius: 10px ;
+}
+
+
+
+.left{
+    margin-top: 5px;
+    margin-bottom: 5px;
+float: left;
+clear: both;
+}
+
+.right{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    clear: both;
+}
+
+.send{
+    /* background-image: linear-gradient(rgb(236, 237, 247),rgb(110, 34, 203)
+    ) ; */
+   align-items: center;
+    max-width: 70%;
+    margin: auto;
+}
+#send-container{
+    display: block;
+    text-align: center;
+}
+#messageInp{
+    width: 80%;
+border: 3px solid gray;
+border-radius: 5px ;
+height: 30px;
+
+
+}
+
+.btn { 
+    background-color: rgb(0, 255, 76); /* Initial background color */
+    background-image: linear-gradient(135deg, rgba(0, 255, 76, 1) 0%, rgba(0, 200, 50, 1) 100%); /* Gradient effect */
+    border: none; /* Remove border */
+    border-radius: 10px; /* More rounded corners */
+    cursor: pointer;
+    height: 30px; /* Slightly taller button */
+    font-weight: bold; /* Make font bold */
+    color: white; /* Text color */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0 20px; /* Add padding for better spacing */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    outline: none; /* Remove outline */
+    font-size: 16px; /* Font size */
+}
+
+.btn:hover {
+    background-color: rgb(55, 224, 39); /* Change background on hover */
+    background-image: linear-gradient(135deg, rgba(55, 224, 39, 1) 0%, rgba(0, 200, 50, 1) 100%); /* Change gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.btn:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
+}
+
+
+
+/* Media query for screens with width 450px or less */
+/* Media query for screens with width 450px or less */
+
+@media (max-width: 630px) {
+    body {
+        padding-bottom: 30vh; /* Increase padding-bottom for smaller screens */
+    }
+    .send{
+      
+       align-items: center;
+        max-width: 70%;
+        margin: auto;
+    }
+    #send-container{
+        display: flex;
+        flex-direction: row;
+      
+        text-align: center;
+    }
+    #messageInp{
+        width: 80%;
+    border: 3px solid gray;
+    border-radius: 5px ;
+    height: 30px;
+    
+    .btn{
+        margin-left: 5px;
+        height: 30px;
+        width: auto;
+    }
+    
+    }
+}
+
+@media (max-width: 1050px) {
+   .container{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+}
